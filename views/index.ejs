@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <form action="post" id="form-submit">
+            <div class="input-container">
+                <div class="input">
+                    <label for="nome" class="bold">Nome:</label>
+                    <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+                </div>
+    
+                <div class="input">
+                    <label for="" class="bold corr">Sexo: </label> 
+
+                    <div>
+                        <input type="radio" name="sexo" id="masculino" value="Masculino">
+                        <label for="masculino">Masculino </label>
+                    
+                        <input type="radio" name="sexo" id="feminino" value="Feminino">
+                        <label for="feminino">Feminino </label>
+                    </div>
+                    
+                </div>
+                <div class="input">
+                    <label for="cidade" class="bold">Cidade: </label>
+                    <input type="text" name="cidade" id="cidade" placeholder="Digite sua cidade">
+                </div>
+            </div>
+            <div class="buttons">
+                <button type="submit" class="btn-form" id="submit">
+                    <i class="far fa-plus-square"></i>
+                    Incluir
+                </button>
+            </div>
+        </form>
+
+        <form action="post" id="form-update">
+            <div class="input-container">
+                <div class="input">
+                    <label for="nome" class="bold">Nome:</label>
+                    <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+                </div>
+    
+                <div class="input">
+                    <label for="" class="bold corr">Sexo: </label> 
+
+                    <div>
+                        <input type="radio" name="sexo" id="masculino" value="Masculino">
+                        <label for="masculino">Masculino </label>
+                    
+                        <input type="radio" name="sexo" id="feminino" value="Feminino">
+                        <label for="feminino">Feminino </label>
+                    </div>
+                    
+                </div>
+                <div class="input">
+                    <label for="cidade" class="bold">Cidade: </label>
+                    <input type="text" name="cidade" id="cidade" placeholder="Digite sua cidade">
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="btn-form" id="update-btn" type="submit">
+                    <i class="far fa-edit"></i>
+                    Alterar
+                </button>
+            </div>
+        </form>
+
+        <ul class="tabela">
+            <li class="linha cabecalho">
+                <div class="coluna th">
+                    ID
+                </div>
+                <div class="coluna th">
+                    Nome
+                </div>
+                <div class="coluna th">
+                    Sexo
+                </div>
+                <div class="coluna th">
+                    Cidade
+                </div>
+                <div class="coluna th">
+                    Ações
+                </div>
+            </li>
+        </ul>
+
+        <div class="relatorio-container">
+
+            <textarea name="relatorio" id="relatorio" cols="50" rows="4" disabled>
+            
+            </textarea>
+            <button id="relatorio-btn">Relatório</button>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="js/fetch.js"></script>
+    <script src="js/pessoa.js"></script>
+    <script src="js/controller.js"></script>
+    <script src="js/view.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+:root{
+    --cor-primaria: rgb(29, 155, 240);
+}
+*{
+    font-size: 1em;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+form{
+    padding: 1.5em 1.3em;
+    color: white;
+    background: var(--cor-primaria);
+    display: flex;
+}
+form#form-update{
+    display: none;
+}
+.show{
+    display: flex !important;
+}
+button{
+    cursor: pointer;
+    transition: .4s ease;
+}
+.input-container{
+    background: resd;
+    width: 60%;
+}
+.input{
+    margin-bottom: 1px;
+}
+.corr{
+    display: inline-block;
+    margin-top: 15px;
+}
+.input input[type=text]{
+    border: transparent;
+    padding-top: 8px;
+    background: none;
+    outline: none;
+    border-bottom: 2px solid white;
+    color: white;
+    width: 100%;
+}
+.input input[type=text]::placeholder{
+    color: rgba(255, 255, 255, 0.486);
+}
+.input input[type=radio]{
+    margin: 15px 10px;
+}
+label.bold{
+    font-weight: 900;
+}
+.buttons{
+    width: 40%;
+    padding: 0px 10px;
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+.buttons button{
+    width: 100%;
+    height: 50px;;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid transparent;
+    margin-bottom: 4px;
+    border-radius: 3px;
+    color: var(--cor-primaria);
+}
+.buttons button:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.relatorio-container{
+    padding: 1em;
+}
+textarea{
+    width: 100%;
+    height: 250px;
+    resize: none;
+    border: 1px solid var(--cor-primaria);
+    border-radius: 3px;
+    font-size: 1.3em;
+}
+.relatorio-container button{
+    width: 100%;
+    padding: 10px 0;
+    border: 2px solid var(--cor-primaria);
+    color: white;
+    background: var(--cor-primaria);
+    border-radius: 3px;
+}
+.relatorio-container button:hover{
+    background: rgba(29, 155, 240, .7);
+}
+.tabela{
+    margin: 20px 18px;
+    border: 1px solid bslack;
+    text-align: center;
+}
+.tabela .linha.cabecalho{
+    font-weight: bold;
+    background: var(--cor-primaria);
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.tabela .linha{
+    display: flex;
+    padding: 12px 0;
+    background: rgb(198, 222, 240);
+    vertical-align: middle;
+}
+.tabela .linha:nth-child(2n){
+    background: rgb(154, 202, 238);
+}
+.tabela .linha .coluna{
+    width: 100%;
+}
+.btn-linha{
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 1.2em;
+}
+.btn-linha.btn-linha-editar{
+    color: rgb(25, 155, 31);
+}
+.btn-linha.btn-linha-remover{
+    color: rgb(179, 41, 41);
+}
+.hide{
+    display: none;
+}
+
+@media screen and (min-width: 700px){
+    body{
+        
+    }
+    form{
+        padding: 1.5em 2.2em;
+    }
+    .input-container{
+        max-width: 50%;
+        margin: auto;
+    }
+    .buttons{
+        width: 30%;
+        margin: auto;
+        justify-content: center;
+    }
+    .buttons button{
+        margin: 5px;
+        padding: 10px 10px !important;
+        max-width: 220px;
+    }
+}
